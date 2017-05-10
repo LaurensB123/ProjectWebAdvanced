@@ -10,66 +10,253 @@
 
 class klant
 {
- private $id;
- private $naam;
- private $locatieKlant;
 
+
+private $klantNummer;
+private $klantNaam;
+private $klantVoornaam;
+private $klantPostcode;
+private $klantGemeente;
+private $klantStraat;
+private $klantHuisnummer;
+private $klantTelefoonnummer;
+private $klantGsmNummer;
+private $klantEmailadres;
+private $getekendeOfferte;
+private $getekendContract;
+private $project;
 
 
  //Aanmaken nieuwe klant
- function __construct()
+    /**
+     * klant constructor.
+     */
+    function __construct()
  {
-     this.$this->id;
-     this.$this->naam;
-     this.$this->locatieKlant;
+     this.$this->klantNummer;
+     this.$this->klantNaam;
+     this.$this->klantVoornaam;
+     this.$this->klantPostcode;
+     this.$this->klantGemeente;
+     this.$this->klantStraat;
+     this.$this->klantHuisnummer;
+     this.$this->klantTelefoonnummer;
+     this.$this->klantGsmNummer;
+     this.$this->klantEmailadres;
+     this.$this->getekendeOfferte;
+     this.$this->getekendContract;
+     this.$this->project;
  }
-    /**
-     * @return mixed
-     */
-    public function getNaam()
-    {
-        return $this->naam;
-    }
-
-    /**
-     * @param mixed $naam
-     */
-    public function setNaam($naam)
-    {
-        $this->naam = $naam;
-    }
 
     /**
      * @return mixed
      */
-    public function getId()
+    public function getKlantNummer()
     {
-        return $this->id;
+        return $this->klantNummer;
     }
 
     /**
-     * @param mixed $id
+     * @param mixed $klantNummer
      */
-    public function setId($id)
+    public function setKlantNummer($klantNummer)
     {
-        $this->id = $id;
+        $this->klantNummer = $klantNummer;
     }
 
     /**
      * @return mixed
      */
-    public function getLocatieKlant()
+    public function getKlantNaam()
     {
-        return $this->locatieKlant;
+        return $this->klantNaam;
     }
 
     /**
-     * @param mixed $locatieKlant
+     * @param mixed $klantNaam
      */
-    public function setLocatieKlant($locatieKlant)
+    public function setKlantNaam($klantNaam)
     {
-        $this->locatieKlant = $locatieKlant;
+        $this->klantNaam = $klantNaam;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantVoornaam()
+    {
+        return $this->klantVoornaam;
+    }
+
+    /**
+     * @param mixed $klantVoornaam
+     */
+    public function setKlantVoornaam($klantVoornaam)
+    {
+        $this->klantVoornaam = $klantVoornaam;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantPostcode()
+    {
+        return $this->klantPostcode;
+    }
+
+    /**
+     * @param mixed $klantPostcode
+     */
+    public function setKlantPostcode($klantPostcode)
+    {
+        $this->klantPostcode = $klantPostcode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantGemeente()
+    {
+        return $this->klantGemeente;
+    }
+
+    /**
+     * @param mixed $klantGemeente
+     */
+    public function setKlantGemeente($klantGemeente)
+    {
+        $this->klantGemeente = $klantGemeente;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantStraat()
+    {
+        return $this->klantStraat;
+    }
+
+    /**
+     * @param mixed $klantStraat
+     */
+    public function setKlantStraat($klantStraat)
+    {
+        $this->klantStraat = $klantStraat;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantHuisnummer()
+    {
+        return $this->klantHuisnummer;
+    }
+
+    /**
+     * @param mixed $klantHuisnummer
+     */
+    public function setKlantHuisnummer($klantHuisnummer)
+    {
+        $this->klantHuisnummer = $klantHuisnummer;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantTelefoonnummer()
+    {
+        return $this->klantTelefoonnummer;
+    }
+
+    /**
+     * @param mixed $klantTelefoonnummer
+     */
+    public function setKlantTelefoonnummer($klantTelefoonnummer)
+    {
+        $this->klantTelefoonnummer = $klantTelefoonnummer;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantGsmNummer()
+    {
+        return $this->klantGsmNummer;
+    }
+
+    /**
+     * @param mixed $klantGsmNummer
+     */
+    public function setKlantGsmNummer($klantGsmNummer)
+    {
+        $this->klantGsmNummer = $klantGsmNummer;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantEmailadres()
+    {
+        return $this->klantEmailadres;
+    }
+
+    /**
+     * @param mixed $klantEmailadres
+     */
+    public function setKlantEmailadres($klantEmailadres)
+    {
+        $this->klantEmailadres = $klantEmailadres;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGetekendeOfferte()
+    {
+        return $this->getekendeOfferte;
+    }
+
+    /**
+     * @param mixed $getekendeOfferte
+     */
+    public function setGetekendeOfferte($getekendeOfferte)
+    {
+        $this->getekendeOfferte = $getekendeOfferte;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGetekendContract()
+    {
+        return $this->getekendContract;
+    }
+
+    /**
+     * @param mixed $getekendContract
+     */
+    public function setGetekendContract($getekendContract)
+    {
+        $this->getekendContract = $getekendContract;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getProject()
+    {
+        return $this->project;
+    }
+
+    /**
+     * @param mixed $project
+     */
+    public function setProject($project)
+    {
+        $this->project = $project;
+    }
+
+
 
 
 }
