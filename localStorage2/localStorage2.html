@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Storage 2</title>
+
+    <script type = "text/javascript">
+        function setBackground(){
+            localStorage.bgColor = document.getElementById("color_list").value;
+            document.body.style.backgroundColor = localStorage.bgColor;
+        }
+
+        function loadBackground(){
+            if (localStorage.bgColor.length == 0){
+                localStorage.bgColor = "white";
+            }else{
+                document.body.style.backgroundColor = localStorage.bgColor;
+                document.getElementById("color_list").value = localStorage.bgColor;
+            }
+        }
+    </script>
+
+
+</head>
+<body onload="javascript: localBackground();">
+
+<select id="color_list";>
+    <option value="white">White</option>
+    <option value="grey">Grey</option>
+    <option value="orange">Orange</option>
+    <option value="purple">Purple</option>
+</select>
+
+<input type="button" value="Set Background color" onclick="javascript: setBackground()"/>
+
+
+</body>
+</html>
