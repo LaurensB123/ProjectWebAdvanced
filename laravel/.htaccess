@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^(.*)$ getting-started/public/$1 [L]
