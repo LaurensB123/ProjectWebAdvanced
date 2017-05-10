@@ -1,3 +1,4 @@
+
 <?php
 
 /**
@@ -6,12 +7,16 @@
  * Date: 3/05/2017
  * Time: 14:56
  */
+include klant::class;
+
 class evenement
 {
  private $id;
  private $locatie;
  private $datum;
  private $naamEvenement;
+ private $gast;
+ private $personeel;
 
 
 
@@ -22,6 +27,12 @@ class evenement
      this.$this->locatie;
      this.$this->datum;
      this.$this->naamEvenement;
+ }
+
+
+ function assignOwner () {
+
+
  }
 
     /**

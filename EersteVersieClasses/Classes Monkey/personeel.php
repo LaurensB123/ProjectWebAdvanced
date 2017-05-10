@@ -1,4 +1,4 @@
-<?php
+<?php include Database.inc.php;
 
 /**
  * Created by PhpStorm.
@@ -8,63 +8,99 @@
  */
 class personeel
 {
-private $id;
-private $naamPersoneelsLid;
-private $rolPersoneelsLid;
+    private $naam;
+    private $adress;
+    private $gebruikersnaam;
+    private $wachtwoord;
+    private $loonkost;
 
- function __construct()
- {
-     this.$this->id;
-     this.$this->naamPersoneelsLid;
-     this.$this->rolPersoneelsLid;
- }
-
-    /**
-     * @return mixed
-     */
-    public function getId()
+    function __construct()
     {
-        return $this->id;
-    }
-
-    /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
+        this . $this->naam;
+        this . $this->adress;
+        this . $this->gebruikersnaam;
+        this . $this->wachtwoord;
+        this . $this->loonkost;
     }
 
     /**
      * @return mixed
      */
-    public function getNaamPersoneelsLid()
+    public function getNaam()
     {
-        return $this->naamPersoneelsLid;
+        return $this->naam;
     }
 
     /**
-     * @param mixed $naamPersoneelsLid
+     * @param mixed $naam
      */
-    public function setNaamPersoneelsLid($naamPersoneelsLid)
+    public function setNaam($naam)
     {
-        $this->naamPersoneelsLid = $naamPersoneelsLid;
+        $this->naam = $naam;
     }
 
     /**
      * @return mixed
      */
-    public function getRolPersoneelsLid()
+    public function getAdress()
     {
-        return $this->rolPersoneelsLid;
+        return $this->adress;
     }
 
     /**
-     * @param mixed $rolPersoneelsLid
+     * @param mixed $adress
      */
-    public function setRolPersoneelsLid($rolPersoneelsLid)
+    public function setAdress($adress)
     {
-        $this->rolPersoneelsLid = $rolPersoneelsLid;
+        $this->adress = $adress;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGebruikersnaam()
+    {
+        return $this->gebruikersnaam;
+    }
+
+    /**
+     * @param mixed $gebruikersnaam
+     */
+    public function setGebruikersnaam($gebruikersnaam)
+    {
+        $this->gebruikersnaam = $gebruikersnaam;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWachtwoord()
+    {
+        return $this->wachtwoord;
+    }
+
+    /**
+     * @param mixed $wachtwoord
+     */
+    public function setWachtwoord($wachtwoord)
+    {
+        $this->wachtwoord = $wachtwoord;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLoonkost()
+    {
+        return $this->loonkost;
+    }
+
+    /**
+     * @param mixed $loonkost
+     */
+    public function setLoonkost($loonkost)
+    {
+        $this->loonkost = $loonkost;
     }
 
 }
