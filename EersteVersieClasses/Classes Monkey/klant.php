@@ -1,4 +1,4 @@
-<?php
+<?php include  Database.inc.php;
 
 /**
  * Created by PhpStorm.
@@ -30,8 +30,9 @@ private $project;
  //Aanmaken nieuwe klant
     /**
      * klant constructor.
+     * @param Project $project
      */
-    function __construct()
+    function __construct(Project $project)
  {
      this.$this->klantNummer;
      this.$this->klantNaam;
@@ -251,7 +252,7 @@ private $project;
     /**
      * @param mixed $project
      */
-    public function setProject($project)
+    public function setProject(Project $project)
     {
         $this->project = $project;
     }
