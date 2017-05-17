@@ -1,4 +1,4 @@
-<?php
+<?php include Database.inc.php;
 
 /**
  * Created by PhpStorm.

@@ -1,4 +1,4 @@
-<?php include  Database.inc.php;
+<?php include Database.inc.php;
 
 /**
  * Created by PhpStorm.
@@ -26,28 +26,39 @@ private $getekendeOfferte;
 private $getekendContract;
 private $project;
 
-
- //Aanmaken nieuwe klant
     /**
      * klant constructor.
-     * @param Project $project
+     * @param $klantNummer
+     * @param $klantNaam
+     * @param $klantVoornaam
+     * @param $klantPostcode
+     * @param $klantGemeente
+     * @param $klantStraat
+     * @param $klantHuisnummer
+     * @param $klantTelefoonnummer
+     * @param $klantGsmNummer
+     * @param $klantEmailadres
+     * @param $getekendeOfferte
+     * @param $getekendContract
+     * @param $project
      */
-    function __construct(Project $project)
- {
-     this.$this->klantNummer;
-     this.$this->klantNaam;
-     this.$this->klantVoornaam;
-     this.$this->klantPostcode;
-     this.$this->klantGemeente;
-     this.$this->klantStraat;
-     this.$this->klantHuisnummer;
-     this.$this->klantTelefoonnummer;
-     this.$this->klantGsmNummer;
-     this.$this->klantEmailadres;
-     this.$this->getekendeOfferte;
-     this.$this->getekendContract;
-     this.$this->project;
- }
+    public function __construct($klantNummer, $klantNaam, $klantVoornaam, $klantPostcode, $klantGemeente, $klantStraat, $klantHuisnummer, $klantTelefoonnummer, $klantGsmNummer, $klantEmailadres, $getekendeOfferte, $getekendContract,Project $project)
+    {
+        $this->klantNummer = $klantNummer;
+        $this->klantNaam = $klantNaam;
+        $this->klantVoornaam = $klantVoornaam;
+        $this->klantPostcode = $klantPostcode;
+        $this->klantGemeente = $klantGemeente;
+        $this->klantStraat = $klantStraat;
+        $this->klantHuisnummer = $klantHuisnummer;
+        $this->klantTelefoonnummer = $klantTelefoonnummer;
+        $this->klantGsmNummer = $klantGsmNummer;
+        $this->klantEmailadres = $klantEmailadres;
+        $this->getekendeOfferte = $getekendeOfferte;
+        $this->getekendContract = $getekendContract;
+        $this->project = $project;
+    }
+
 
     /**
      * @return mixed
@@ -252,7 +263,7 @@ private $project;
     /**
      * @param mixed $project
      */
-    public function setProject(Project $project)
+    public function setProject($project)
     {
         $this->project = $project;
     }

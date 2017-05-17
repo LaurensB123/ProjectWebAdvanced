@@ -1,4 +1,4 @@
-<?php
+<?php include Database.inc.php;
 
 class evenement {
     private $id;
@@ -8,17 +8,26 @@ class evenement {
     private $klantId;
     private $prijs;
 
-    public function __construct($naam, \DateTime $beginDatum, \DateTime $eindDatum, $klantId, $prijs) {
-        $this->setNaam($naam);
-        $this->SetStartDatum($beginDatum);
-        $this->setEindDatum($eindDatum);
-        $this->setKlantId($klantId);
-        $this->setPrijs($prijs);
+    /**
+     * evenement constructor.
+     * @param $id
+     * @param $naam
+     * @param $beginDatum
+     * @param $eindDatum
+     * @param $klantId
+     * @param $prijs
+     */
+    public function __construct($id, $naam, \DateTime $beginDatum, \DateTime $eindDatum, $klantId, $prijs)
+    {
+        $this->id = $id;
+        $this->naam = $naam;
+        $this->beginDatum = $beginDatum;
+        $this->eindDatum = $eindDatum;
+        $this->klantId = $klantId;
+        $this->prijs = $prijs;
     }
 
-    /**
-     * @return mixed
-     */
+
     public function getId()
     {
         return $this->id;
