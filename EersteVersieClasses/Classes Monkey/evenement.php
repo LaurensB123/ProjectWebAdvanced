@@ -1,43 +1,33 @@
+<?php include Database.inc.php;
 
-<?php
-
-/**
- * Created by PhpStorm.
- * User: 11305206
- * Date: 3/05/2017
- * Time: 14:56
- */
-include klant::class;
-
-class evenement
-{
- private $id;
- private $locatie;
- private $datum;
- private $naamEvenement;
- private $gast;
- private $personeel;
-
-
-
- //Aanmaken nieuw evenement
- function __construct()
- {
-     this.$this->id;
-     this.$this->locatie;
-     this.$this->datum;
-     this.$this->naamEvenement;
- }
-
-
- function assignOwner () {
-
-
- }
+class evenement {
+    private $id;
+    private $naam;
+    private $beginDatum;
+    private $eindDatum;
+    private $klantId;
+    private $prijs;
 
     /**
-     * @return mixed
+     * evenement constructor.
+     * @param $id
+     * @param $naam
+     * @param $beginDatum
+     * @param $eindDatum
+     * @param $klantId
+     * @param $prijs
      */
+    public function __construct($id, $naam, \DateTime $beginDatum, \DateTime $eindDatum, $klantId, $prijs)
+    {
+        $this->id = $id;
+        $this->naam = $naam;
+        $this->beginDatum = $beginDatum;
+        $this->eindDatum = $eindDatum;
+        $this->klantId = $klantId;
+        $this->prijs = $prijs;
+    }
+
+
     public function getId()
     {
         return $this->id;
@@ -54,49 +44,82 @@ class evenement
     /**
      * @return mixed
      */
-    public function getLocatie()
+    public function getNaam()
     {
-        return $this->locatie;
+        return $this->naam;
     }
 
     /**
-     * @param mixed $locatie
+     * @param mixed $naam
      */
-    public function setLocatie($locatie)
+    public function setNaam($naam)
     {
-        $this->locatie = $locatie;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDatum()
-    {
-        return $this->datum;
-    }
-
-    /**
-     * @param mixed $datum
-     */
-    public function setDatum($datum)
-    {
-        $this->datum = $datum;
+        $this->naam = $naam;
     }
 
     /**
      * @return mixed
      */
-    public function getNaamEvenement()
+    public function getBeginDatum()
     {
-        return $this->naamEvenement;
+        return $this->beginDatum;
     }
 
     /**
-     * @param mixed $naamEvenement
+     * @param mixed $beginDatum
      */
-    public function setNaamEvenement($naamEvenement)
+    public function setBeginDatum($beginDatum)
     {
-        $this->naamEvenement = $naamEvenement;
+        $this->beginDatum = $beginDatum;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getEindDatum()
+    {
+        return $this->eindDatum;
+    }
+
+    /**
+     * @param mixed $eindDatum
+     */
+    public function setEindDatum($eindDatum)
+    {
+        $this->eindDatum = $eindDatum;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getKlantId()
+    {
+        return $this->klantId;
+    }
+
+    /**
+     * @param mixed $klantId
+     */
+    public function setKlantId($klantId)
+    {
+        $this->klantId = $klantId;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrijs()
+    {
+        return $this->prijs;
+    }
+
+    /**
+     * @param mixed $prijs
+     */
+    public function setPrijs($prijs)
+    {
+        $this->prijs = $prijs;
+    }
+
 
 }
