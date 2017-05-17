@@ -1,0 +1,35 @@
+{
+  "employee":
+          [
+            {
+              "id": "kl001",
+              "name": "hannah",
+              "email": "hannah@gmail.com",
+              "postcode": "3600"
+            },
+            {
+              "id": "kl002",
+              "name": "laurens",
+              "email": "laurens@gmail.com",
+              "postcode": "3600"
+            },
+            {
+              "id": "kl003",
+              "name": "mart",
+              "email": "mart@gmail.com",
+              "postcode": "3600"
+            },
+            {
+              "id": "kl004",
+              "name": "gil",
+              "email": "gil@gmail.com",
+              "postcode": "3600"
+            },
+            {
+              "id": "kl005",
+              "name": "nick",
+              "email": "nick@gmail.com",
+              "postcode": "3600"
+            }
+          ]
+}
