@@ -11,13 +11,16 @@ $json = json_decode($jsonData, true);
 
 echo '<h1>Klanten data</h1>';
 
+$output="";
+
 foreach($json['employee'] as $employee){
 
-    $output="ID : ".$klant['id']."<br />";
-    $output="Naam : ".$klant['name']."<br />";
-    $output="Email : ".$klant['email']."<br />";
-    $output="Postcpde : ".$klant['postcode']."<br />";
-
+    $output.="ID : ".$klant['id']."<br />";
+    $output.="Naam : ".$klant['name']."<br />";
+    $output.="Email : ".$klant['email']."<br />";
+    $output.="Postcpde : ".$klant['postcode']."<br />";
+    $output.="<br/>";
 }
+echo $output;
 
 ?>
