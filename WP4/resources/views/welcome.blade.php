@@ -70,24 +70,23 @@
     <body>
         <div class="flex-center position-ref full-height">
             <br>
-            @if (Route::has('login'))
-                <div class="top-right links">
                     @if (Auth::check())
-                        <p>Loggedin</p>
                     @else
-                       <p>test</p>
+                <p>
+                    {{ $errors->first('email') }}
+                    {{ $errors->first('password') }}
+                </p>
+                        <div class="main_login">
+                            <h2>Login</h2>
+                            <form method="post" action="login" enctype="multipart/form-data">
+                                <input type="text" name="email" placeholder="Username">
+                                <input type="password" name="password" placeholder="Password">
+                                <input type="submit" name="login_subm" value="login">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <a href="{{URL::to('/register')}}">register</a>
+                            </form>
+                        </div>
                     @endif
-                </div>
-                @else
-                <div class="main_login">
-                    <h2>Login</h2>
-                    <form method="post" action="login" enctype="multipart/form-data">
-                        <input type="text" name="user" placeholder="Username">
-                        <input type="password" name="pw" placeholder="Password">
-                        <input type="submit" name="login_subm" value="login">
-                    </form>
-                </div>
-            @endif
         </div>
     </body>
 </html>

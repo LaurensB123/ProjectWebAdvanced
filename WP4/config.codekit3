@@ -99,6 +99,12 @@
 		"oAP": "\/app\/Http\/Controllers\/Controller.php",
 		"oF": 0
 		},
+	"\/app\/Http\/Controllers\/HomeController.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/app\/Http\/Controllers\/HomeController.php",
+		"oF": 0
+		},
 	"\/app\/Http\/Kernel.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -275,22 +281,28 @@
 		"oAP": "\/database\/.gitignore",
 		"oF": 0
 		},
+	"\/database\/dis_migrations\/2014_10_12_000000_create_users_table.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/database\/dis_migrations\/2014_10_12_000000_create_users_table.php",
+		"oF": 0
+		},
+	"\/database\/dis_migrations\/2014_10_12_100000_create_password_resets_table.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/database\/dis_migrations\/2014_10_12_100000_create_password_resets_table.php",
+		"oF": 0
+		},
 	"\/database\/factories\/ModelFactory.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/database\/factories\/ModelFactory.php",
 		"oF": 0
 		},
-	"\/database\/migrations\/2014_10_12_000000_create_users_table.php": {
+	"\/database\/migrations\/2017_05_17_143853_create_klanten_table.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/database\/migrations\/2014_10_12_000000_create_users_table.php",
-		"oF": 0
-		},
-	"\/database\/migrations\/2014_10_12_100000_create_password_resets_table.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/database\/migrations\/2014_10_12_100000_create_password_resets_table.php",
+		"oAP": "\/database\/migrations\/2017_05_17_143853_create_klanten_table.php",
 		"oF": 0
 		},
 	"\/database\/seeds\/DatabaseSeeder.php": {
@@ -319,6 +331,24 @@
 		"oAP": "\/public\/.htaccess",
 		"oF": 0
 		},
+	"\/public\/.idea\/modules.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/.idea\/modules.xml",
+		"oF": 0
+		},
+	"\/public\/.idea\/public.iml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/.idea\/public.iml",
+		"oF": 0
+		},
+	"\/public\/.idea\/workspace.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/.idea\/workspace.xml",
+		"oF": 0
+		},
 	"\/public\/css\/app.css": {
 		"aP": 1,
 		"bl": 0,
@@ -340,8 +370,8 @@
 		"oS": 0
 		},
 	"\/public\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
+		"aP": 1,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -349,7 +379,7 @@
 		"oA": 0,
 		"oAP": "\/public\/css\/style.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/public\/favicon.ico": {
@@ -487,6 +517,72 @@
 		"oAP": "\/resources\/lang\/en\/validation.php",
 		"oF": 0
 		},
+	"\/resources\/views\/auth\/login.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/auth\/login.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/auth\/passwords\/email.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/auth\/passwords\/email.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/auth\/passwords\/reset.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/auth\/passwords\/reset.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/auth\/register.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/auth\/register.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/home.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/home.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/klantbewerken.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/klantbewerken.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/klantenoverzicht.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/klantenoverzicht.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/klanttoevoegen.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/klanttoevoegen.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/layouts\/app.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/layouts\/app.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/register.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/register.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/saved.blade.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/resources\/views\/saved.blade.php",
+		"oF": 0
+		},
 	"\/resources\/views\/welcome.blade.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -565,10 +661,64 @@
 		"oAP": "\/storage\/framework\/views\/.gitignore",
 		"oF": 0
 		},
+	"\/storage\/framework\/views\/1dcb87e2364bd45240cd5005963610ed56fa8986.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/1dcb87e2364bd45240cd5005963610ed56fa8986.php",
+		"oF": 0
+		},
 	"\/storage\/framework\/views\/6e46cdd2d4b01064a52ae621d995242dd7dcadd6.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/storage\/framework\/views\/6e46cdd2d4b01064a52ae621d995242dd7dcadd6.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/7e9433e7f538640f55f6c11add281cbd81a45d32.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/7e9433e7f538640f55f6c11add281cbd81a45d32.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/803888fa33449975df296b2eafb2a506eb334b15.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/803888fa33449975df296b2eafb2a506eb334b15.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/8882bb983f5b31ae5a54a76a6b03a870927795e2.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/8882bb983f5b31ae5a54a76a6b03a870927795e2.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/9b28fdfa212bef5f11c43b27a0e7484275feb752.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/9b28fdfa212bef5f11c43b27a0e7484275feb752.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/9ecb1b260dadfc4b397af34957089d36874ebe6a.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/9ecb1b260dadfc4b397af34957089d36874ebe6a.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/bd8651c2e5c1e59d6e3519449d200e4f83d0ddfd.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/bd8651c2e5c1e59d6e3519449d200e4f83d0ddfd.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/ce5a4ea9c09a6ebb2ec3cef758422e8198a63984.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/ce5a4ea9c09a6ebb2ec3cef758422e8198a63984.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/eedb43c67812419b9702eaf4785ea196fa2529a3.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/storage\/framework\/views\/eedb43c67812419b9702eaf4785ea196fa2529a3.php",
 		"oF": 0
 		},
 	"\/storage\/logs": {
@@ -38922,6 +39072,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/wegproject.sql": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wegproject.sql",
+		"oF": 0
 		}
 	},
 "hooks": [
