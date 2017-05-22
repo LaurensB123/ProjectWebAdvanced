@@ -6,19 +6,21 @@
  * Time: 15:39
  */
 
-$jsonData = file_get_contents("klant.json");
+$jsonData = file_get_contents("DB.json");
 $json = json_decode($jsonData, true);
 
-echo '<h1>Klanten data</h1>';
+echo '<h1>Data</h1>';
 
 $output="";
 
-foreach($json['employee'] as $employee){
+foreach($json['DB'] as $employee){
 
-    $output.="ID : ".$klant['id']."<br />";
-    $output.="Naam : ".$klant['name']."<br />";
-    $output.="Email : ".$klant['email']."<br />";
-    $output.="Postcpde : ".$klant['postcode']."<br />";
+    $output.="Connection : ".$klant['id']."<br />";
+    $output.="Host : ".$klant['name']."<br />";
+    $output.="Port : ".$klant['email']."<br />";
+    $output.="Database : ".$klant['postcode']."<br />";
+    $output.="Username : ".$klant['postcode']."<br />";
+    $output.="Password : ".$klant['postcode']."<br />";
     $output.="<br/>";
 }
 echo $output;
