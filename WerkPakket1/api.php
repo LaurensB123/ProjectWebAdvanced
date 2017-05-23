@@ -19,7 +19,7 @@ try {
     $evenementController = new EvenementController($evenementPDORepository, $JsonView);
 
     $router = new AltoRouter();
-    $router->setBasePath("/WP1");
+    $router->setBasePath("/WerkPakket1");
 
     $router->map("GET","/evenement",
         function () use (&$evenementController)

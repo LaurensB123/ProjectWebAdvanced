@@ -1,7 +1,7 @@
 <?php
 use model\Evenement;
 use model\PDOEvenementRepository;
-require 'WP1/vendor/autoload.php';
+require 'WerkPakket1/vendor/autoload.php';
 
 class PDORepositoryTest extends PHPUnit\Framework\TestCase
 {
